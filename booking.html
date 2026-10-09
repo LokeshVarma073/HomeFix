@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Book Service - HomeFix</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">H</span>
+            HomeFix
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="bookings.html">My Bookings</a>
+
+            <a
+                id="userName"
+                class="user-name"
+                style="display:none;">
+            </a>
+
+            <a
+                id="logoutLink"
+                href="#"
+                onclick="logoutUser(); return false;"
+                style="display:none;">
+                Logout
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<div class="container booking-wrapper">
+
+    <div class="booking-card">
+
+        <h1>
+            Complete Your Booking
+        </h1>
+
+        <p style="color:#64748b; margin-bottom:25px;">
+            Select your date, time and payment method.
+        </p>
+
+
+        <div class="booking-summary">
+
+            <p>
+                <strong>Service:</strong>
+                <span id="bookingService"></span>
+            </p>
+
+            <p>
+                <strong>Professional:</strong>
+                <span id="bookingProvider"></span>
+            </p>
+
+            <p>
+                <strong>Starting Price:</strong>
+                <span id="bookingPrice"></span>
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="bookingDate">
+                Select Date
+            </label>
+
+            <select
+                id="bookingDate"
+                class="form-control">
+
+                <option value="">
+                    Select date
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label>
+                Select Available Time
+            </label>
+
+            <p
+                style="font-size:13px;color:#64748b;margin-bottom:10px;">
+                Past time slots are automatically unavailable for today.
+            </p>
+
+            <div
+                id="timeSlots"
+                class="time-grid">
+            </div>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="address">
+                Service Address
+            </label>
+
+            <textarea
+                id="address"
+                class="form-control"
+                placeholder="Enter your complete address">
+            </textarea>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="problem">
+                Describe the Problem
+            </label>
+
+            <textarea
+                id="problem"
+                class="form-control"
+                placeholder="Example: Kitchen tap is leaking">
+            </textarea>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label>
+                Payment Method
+            </label>
+
+
+            <div class="payment-grid">
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="UPI">
+
+                    📱 UPI
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Card">
+
+                    💳 Card
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Cash on Service">
+
+                    💵 Cash
+
+                </label>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="total-box">
+
+            <strong>
+                Estimated Total
+            </strong>
+
+            <span
+                id="totalPrice"
+                class="total-price">
+                ₹0
+            </span>
+
+        </div>
+
+
+
+        <button
+            class="booking-submit"
+            onclick="confirmBooking()">
+
+            Confirm Booking
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <div class="footer-logo">🏠 HomeFix</div>
+            <p>
+                Easy and convenient home services.
+            </p>
+        </div>
+
+        <div>
+            <h3>Support</h3>
+            <p>📧 support@homefix.com</p>
+            <p>📞 +91 98765 43210</p>
+        </div>
+
+        <div>
+            <h3>Service Hours</h3>
+            <p>8:00 AM - 8:00 PM</p>
+            <p>Monday - Sunday</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 HomeFix
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

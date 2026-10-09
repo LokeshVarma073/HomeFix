@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - HomeFix</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                H
+            </span>
+
+            HomeFix
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                User Site
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>
+            Admin Dashboard
+        </h1>
+
+        <p>
+            Manage users, services and bookings.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<main class="container admin-section">
+
+
+    <!-- ADMIN LOGIN -->
+
+    <div
+        id="adminLoginBox"
+        class="auth-card"
+        style="margin:0 auto 40px auto;">
+
+        <h1>
+            Admin Login
+        </h1>
+
+        <p class="auth-subtitle">
+            Enter administrator credentials.
+        </p>
+
+
+        <div class="form-group">
+
+            <label>
+                Admin Email
+            </label>
+
+            <input
+                type="email"
+                id="adminEmail"
+                class="form-control"
+                placeholder="admin@homefix.com">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                class="form-control"
+                placeholder="Enter admin password">
+
+        </div>
+
+
+        <button
+            class="auth-button"
+            onclick="adminLogin()">
+
+            Login as Admin
+
+        </button>
+
+
+        <p
+            id="adminMessage"
+            class="auth-message">
+        </p>
+
+
+        <p
+            style="font-size:13px;color:#64748b;text-align:center;margin-top:15px;">
+            Demo: admin@homefix.com / admin123
+        </p>
+
+    </div>
+
+
+
+    <!-- ADMIN DASHBOARD -->
+
+    <div
+        id="adminDashboard"
+        style="display:none;">
+
+
+        <div class="admin-grid">
+
+
+            <div class="admin-stat">
+
+                <span>
+                    Registered Users
+                </span>
+
+                <h2 id="usersCount">
+                    0
+                </h2>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <span>
+                    Total Bookings
+                </span>
+
+                <h2 id="bookingsCount">
+                    0
+                </h2>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <span>
+                    Services
+                </span>
+
+                <h2 id="servicesCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div
+            style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+
+            <h2>
+                All Bookings
+            </h2>
+
+            <button
+                class="secondary-button"
+                onclick="adminLogout()">
+
+                Admin Logout
+
+            </button>
+
+        </div>
+
+
+
+        <div class="admin-table-wrapper">
+
+            <table class="admin-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>User</th>
+
+                        <th>Service</th>
+
+                        <th>Provider</th>
+
+                        <th>Date</th>
+
+                        <th>Time</th>
+
+                        <th>Payment</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody
+                    id="adminBookingTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+
+            <div class="footer-logo">
+                🏠 HomeFix Admin
+            </div>
+
+            <p>
+                Administration and booking management.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Admin Responsibilities</h3>
+
+            <p>
+                View users and monitor service bookings.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                📧 admin@homefix.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        © 2026 HomeFix
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

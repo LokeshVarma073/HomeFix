@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Services - HomeFix</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">H</span>
+            HomeFix
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="bookings.html">My Bookings</a>
+
+            <a
+                id="userName"
+                class="user-name"
+                style="display:none;">
+            </a>
+
+            <a id="loginLink" href="login.html">
+                Login
+            </a>
+
+            <a
+                id="signupLink"
+                href="signup.html"
+                class="nav-button">
+                Sign Up
+            </a>
+
+            <a
+                id="logoutLink"
+                href="#"
+                onclick="logoutUser(); return false;"
+                style="display:none;">
+                Logout
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>Choose a Service</h1>
+
+        <p>
+            Select the home service you need
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔧</div>
+
+                <h3>Plumbing</h3>
+
+                <p>
+                    Leakage, pipe repair, taps and
+                    other plumbing services.
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="selectService('Plumbing')">
+                    Select
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">⚡</div>
+
+                <h3>Electrical</h3>
+
+                <p>
+                    Wiring, switches, electrical
+                    repair and maintenance.
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="selectService('Electrical')">
+                    Select
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🧹</div>
+
+                <h3>Cleaning</h3>
+
+                <p>
+                    Regular home cleaning and
+                    deep cleaning services.
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="selectService('Cleaning')">
+                    Select
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">❄️</div>
+
+                <h3>AC Repair</h3>
+
+                <p>
+                    AC service, repair and
+                    maintenance services.
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="selectService('AC Repair')">
+                    Select
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <div class="footer-logo">🏠 HomeFix</div>
+            <p>
+                Simple home service booking.
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="bookings.html">Bookings</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>📧 support@homefix.com</p>
+            <p>📞 +91 98765 43210</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 HomeFix
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

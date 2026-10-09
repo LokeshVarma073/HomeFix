@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>HomeFix - Home Services</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">H</span>
+
+            HomeFix
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="bookings.html">My Bookings</a>
+
+            <a
+                id="userName"
+                class="user-name"
+                style="display:none;">
+            </a>
+
+            <a
+                id="loginLink"
+                href="login.html">
+                Login
+            </a>
+
+            <a
+                id="signupLink"
+                href="signup.html"
+                class="nav-button">
+                Sign Up
+            </a>
+
+            <a
+                id="logoutLink"
+                href="#"
+                onclick="logoutUser(); return false;"
+                style="display:none;">
+                Logout
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div>
+
+            <h1>
+                Home Services
+                <span>Made Easy</span>
+            </h1>
+
+            <p>
+                Book trusted professionals for plumbing,
+                electrical, cleaning and AC repair services
+                from the comfort of your home.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="services.html"
+                    class="primary-button">
+                    Book a Service
+                </a>
+
+                <a
+                    href="signup.html"
+                    class="secondary-button">
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="hero-icon">
+                🏠
+            </div>
+
+            <h3>
+                Reliable Home Services
+            </h3>
+
+            <p>
+                Choose a service, select a professional,
+                pick a convenient time and confirm your booking.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Our Services
+            </h2>
+
+            <p>
+                Professional help for your everyday home needs
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔧</div>
+
+                <h3>Plumbing</h3>
+
+                <p>
+                    Pipe repair, leakage and plumbing
+                    maintenance services.
+                </p>
+
+                <a
+                    href="services.html"
+                    class="primary-button">
+                    Explore
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">⚡</div>
+
+                <h3>Electrical</h3>
+
+                <p>
+                    Wiring, electrical repair and
+                    maintenance services.
+                </p>
+
+                <a
+                    href="services.html"
+                    class="primary-button">
+                    Explore
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🧹</div>
+
+                <h3>Cleaning</h3>
+
+                <p>
+                    Home cleaning and deep cleaning
+                    services by professionals.
+                </p>
+
+                <a
+                    href="services.html"
+                    class="primary-button">
+                    Explore
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">❄️</div>
+
+                <h3>AC Repair</h3>
+
+                <p>
+                    AC service, repair and maintenance
+                    by trained technicians.
+                </p>
+
+                <a
+                    href="services.html"
+                    class="primary-button">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Why Choose HomeFix?
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-card">
+
+                <h3>👨‍🔧 Trusted Professionals</h3>
+
+                <p>
+                    Choose from experienced service
+                    professionals with ratings and experience.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>📅 Easy Scheduling</h3>
+
+                <p>
+                    Select a convenient future date and
+                    an available time slot.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>🔒 Simple & Convenient</h3>
+
+                <p>
+                    Manage your account and view your
+                    bookings from one place.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+
+            <div class="footer-logo">
+                🏠 HomeFix
+            </div>
+
+            <p>
+                Your simple and convenient home
+                services booking platform.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="bookings.html">My Bookings</a>
+
+            <a href="login.html">Login</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📧 support@homefix.com</p>
+
+            <p>📞 +91 89199 35750</p>
+
+            <p>📍 Andhra Pradesh, India</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 HomeFix. College Project Prototype.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
